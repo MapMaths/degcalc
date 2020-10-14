@@ -1,0 +1,7 @@
+{
+  "name": "Degree Calculator",
+  "main": "index.html",
+  "window": {
+    "icon": "./favicon.png"
+  }
+}

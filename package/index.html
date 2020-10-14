@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Degree Calculator</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <meta property="og:type" content="calculator" />
+    <meta
+      property="og:description"
+      content="Calculate degrees with add and substruct."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/project-avatar/741e4e18-95a1-43bb-b908-1b23a5082f0a.png?1594822702661"
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.com/project-avatar/741e4e18-95a1-43bb-b908-1b23a5082f0a.png?1594822702661"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Degree Calculator</h1>
+    </header>
+
+    <main>
+      <hr />
+      <section>
+        <h2>
+          Degree Add Calculator
+        </h2>
+        <form oninput="degAdd()">
+          <input type="number" id="addDegA" value="0" min="0" max="21600" />°
+          <input type="number" id="addMinA" value="0" min="0" max="3600" />′
+          <input type="number" id="addSecA" value="0" min="0" max="3600" />″+
+          <input type="number" id="addDegB" value="0" min="0" max="21600" />°
+          <input type="number" id="addMinB" value="0" min="0" max="3600" />′
+          <input type="number" id="addSecB" value="0" min="0" max="3600" />″=
+          <span id="addResult" class="like-input">0°</span>
+        </form>
+      </section>
+
+      <hr />
+      <section>
+        <h2>
+          Degree Subtract Calculator
+        </h2>
+        <form oninput="degMin()">
+          <input type="number" id="minDegA" value="0" min="0" />°
+          <input type="number" id="minMinA" value="0" min="0" />′
+          <input type="number" id="minSecA" value="0" min="0" />″-
+          <input type="number" id="minDegB" value="0" min="0" />°
+          <input type="number" id="minMinB" value="0" min="0" />′
+          <input type="number" id="minSecB" value="0" min="0" />″=
+          <span id="minResult" class="like-input">0°</span>
+        </form>
+      </section>
+
+      <hr />
+      <section>
+        <h2>
+          Degree Multiplication Calculator
+        </h2>
+        <form oninput="degTim()">
+          <input type="number" id="timDegA" value="0" min="0" />°
+          <input type="number" id="timMinA" value="0" min="0" />′
+          <input type="number" id="timSecA" value="0" min="0" />″-
+          <input type="number" id="timDegB" value="0" min="0" />°
+          <input type="number" id="timMinB" value="0" min="0" />′
+          <input type="number" id="timSecB" value="0" min="0" />″=
+          <span id="timResult" class="like-input">0°</span>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+      <div
+        class="glitchButton"
+        style="position:fixed;top:20px;right:20px;"
+      ></div>
+      <script src="https://button.glitch.me/button.js" defer></script>
+    </footer>
+  </body>
+</html>
